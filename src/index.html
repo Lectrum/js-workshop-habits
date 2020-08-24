@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lectrum Habits!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+		<link href="./fonts/Roboto/Roboto.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<style>
+			body {
+				margin: 0;
+				font-size: 16px;
+				font-family: 'TTInterphases-Medium', sans-serif;
+			}
+			img { max-width: 100% }
+			a { text-decoration: none; }
+			p { padding: 0; margin: 0; }
+			html { box-sizing: border-box; }
+			ul { padding: 0; margin: 0; list-style: none; }
+			*,*:before,*:after { box-sizing: inherit; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header__wrapper">
+				<p>Доброе утро!</p>
+			</header>
+			<main>
+				<section class="section__week">
+					<div class="week__wrapper">
+						<ul class="week__lists">
+							<li class="week__item week__mon">
+								<div class="week__day">ПН</div>
+								<div class="week__wont">1/5</div>
+							</li>
+							<li class="week__item week__tues">
+								<div class="week__day">ВТ</div>
+								<div class="week__wont">5/5</div>
+							</li>
+							<li class="week__item week__wed">
+								<div class="week__day">СР</div>
+								<div class="week__wont">2/5</div>
+							</li>
+							<li class="week__item week__thurs">
+								<div class="week__day">ЧТ</div>
+								<div class="week__wont">3/5</div>
+							</li>
+							<li class="week__item week__fri">
+								<div class="week__day">ПТ</div>
+								<div class="week__wont">1/5</div>
+							</li>
+							<li class="week__item week__sat">
+								<div class="week__day">СБ</div>
+								<div class="week__wont">3/5</div>
+							</li>
+							<li class="week__item week__sun">
+								<div class="week__day">ВС</div>
+								<div class="week__wont">0/5</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section__habit">
+					<div class="block__navigation">
+						<button type="button" class="btn navigation__add">
+							<span class="navigation__icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+									<path d="M16.5 7.5h-6v-6a1.5 1.5 0 0 0-3 0v6h-6a1.5 1.5 0 1 0 0 3h6v6a1.5 1.5 0 1 0 3 0v-6h6a1.5 1.5 0 1 0 0-3z" />
+								</svg>
+							</span>
+							<span>Добавить новую привычку</span>
+						</button>
+						<!-- <input type="text" name="habit"> -->
+					</div>
+
+					<div class="habit__wrapper">
+						<label class="btn--habit">
+							<input type="checkbox" name="habit" class="_hidden">
+							<span class="btn-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+								</svg>
+							</span>
+							Почитать книгу
+						</label>
+
+						<label class="btn--habit">
+							<input type="checkbox" name="habit" class="_hidden">
+							<span class="btn-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+								</svg>
+							</span>
+							Выучить английские слова
+						</label>
+
+						<label class="btn--habit">
+							<input type="checkbox" name="habit" class="_hidden">
+							<span class="btn-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+								</svg>
+							</span>
+							Помедитировать
+						</label>
+
+						<label class="btn--habit">
+							<input type="checkbox" name="habit" class="_hidden">
+							<span class="btn-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+								</svg>
+							</span>
+							Позаниматься спортом
+						</label>
+
+						<label class="btn--habit">
+							<input type="checkbox" name="habit" class="_hidden">
+							<span class="btn-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+								</svg>
+							</span>
+							Застелить постель
+						</label>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
